@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Storybook for the Web Engineering Module</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7COpen+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7COpen+Sans+Condensed:300,700%7CSource+Code+Pro" rel="stylesheet">
 
     <style>
-        /**
-         * Reset
-         */
+        /* http://meyerweb.com/eric/tools/css/reset/
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
         html, body, div, span, applet, object, iframe,
         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
         a, abbr, acronym, address, big, cite, code,
@@ -30,6 +32,26 @@
             font: inherit;
             vertical-align: baseline;
         }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
 
         /**
          * Typography
@@ -42,6 +64,8 @@
 
         *, header, footer {
             font-family: 'Open Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             box-sizing: border-box;
         }
 
@@ -60,6 +84,10 @@
 
         h2 {
             font-size: 1.5rem;
+        }
+
+        code, pre {
+            font-family: 'Source Code Pro', monospace;
         }
 
         /**
